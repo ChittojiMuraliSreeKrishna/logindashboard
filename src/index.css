@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+html{
+  --colorLight: #ffffff;
+  --colorDark: #000000;
+  --colorGrey: #aaaaaa;
+  --colorDarkGrey: #9a9a9a;
+  --colorRed: #dd0000;
+  --colorYellow: #fafa00;
+  --colorCyan: #00fafa;
+  --colorGreen: #009f00;
+  --colorBlue: #0000df;
+
+  /*Font Size*/
+  --fs-lg: 3.5rem;
+  --fs-md: 2.3rem;
+  --fs-sm: 1.5rem;
+}
+
+@media (max-width: 900px){
+  html{
+    --fs-lg: 2.5rem;
+    --fs-md: 1.8rem;
+    --fs-sm: 1.3rem;
+  }
+}

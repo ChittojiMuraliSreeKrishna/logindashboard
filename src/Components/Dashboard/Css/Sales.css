@@ -1,0 +1,55 @@
+.Sales{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 350px;
+}
+
+.sales-box{
+	width: 350px;
+	height: 110px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	border-radius: 10px;
+	display: grid;
+	padding: 1rem;
+	place-items:  center;
+}
+
+.sales-box .miniheading {
+	color: var(--colorGrey);
+	font-size: var(--fs-sm);
+	font-weight: 100;
+}
+
+.sales-box .subheading {
+	color: var(--colorLight);
+	font-size: var(--fs-md);
+	font-weight: 600;
+}
+
+.today-sales{
+	background: linear-gradient(to right, #3bb143, #0b6623);
+}
+
+.monthly-sales{
+	background: linear-gradient(to right, #1167b1, #03254c);
+}
+
+.total-sales{
+	background: linear-gradient(to right, #ff8303, #853500);
+}
+
+@media (min-width: 1000px){
+	.Sales{
+		height: 500px;
+	}
+	.sales-box{
+		height: 160px;
+	}
+	.sales-box .subheading {
+		font-size: var(--fs-lg);
+	}
+	.sales-box .miniheading {
+		font-size: var(--fs-md);
+	}
+}

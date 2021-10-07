@@ -1,0 +1,15 @@
+.Footer{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 1rem;
+	background: var(--colorGrey);
+	font-size: var(--fs-sm);
+}
+
+@media (max-width:  1000px){
+	.Footer{
+	flex-direction: column;
+	align-items: flex-end;
+}
+}

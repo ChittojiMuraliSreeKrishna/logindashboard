@@ -1,0 +1,17 @@
+@import 'Variables';
+
+.Footer{
+    @include flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    background: $grey;
+    font-size: $font-small;
+}
+
+@media (max-width: $breakpoint-mobile ){
+    .Footer{
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}

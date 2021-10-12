@@ -1,0 +1,7 @@
+@import 'Variables';
+
+.Body{
+    @include flex-column;
+    justify-content: space-between;
+    height: 100vh;
+}

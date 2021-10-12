@@ -1,0 +1,15 @@
+@import 'Variables';
+
+.Doughnut {
+    height: 500px;
+    width: 500px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .Doughnut{
+        height: 350px;
+        width: 350px;
+    }
+}

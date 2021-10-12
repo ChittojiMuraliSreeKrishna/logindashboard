@@ -1,17 +1,17 @@
-import '../Css/Sales.css';
+import '../Styles/Sales.scss';
 
 const Sales = () => {
 	return(
 		<div className="Sales">
-			<div className="today-sales sales-box">
+			<div className="today-sales Sales-box">
 				<h4 className="miniheading">Today's Sales</h4>
 				<h3 className="subheading">$1,25,300</h3>
 			</div>
-			<div className="monthly-sales sales-box">
+			<div className="monthly-sales Sales-box">
 				<h4 className="miniheading">Monthly Sales</h4>
 				<h3 className="subheading">$21,15,275</h3>
 			</div>
-			<div className="total-sales sales-box">
+			<div className="total-sales Sales-box">
 				<h4 className="miniheading">This month sales v/s Last month</h4>
 				<h3 className="subheading">+ 18.75%</h3>
 			</div>
@@ -19,4 +19,4 @@ const Sales = () => {
 	)
 }
 
-export default Sales
+export default Sales;

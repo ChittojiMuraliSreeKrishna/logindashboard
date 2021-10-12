@@ -1,0 +1,23 @@
+@import 'Variables';
+
+.Component {
+    @include flex;
+    justify-content: space-around;
+}
+
+.Dashboard {
+    margin: 0 0 2rem 2rem;
+
+    .heading{
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: $breakpoint-mobile){
+    .Component {
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 2rem;
+        align-items: center;
+    }
+}

@@ -1,0 +1,42 @@
+$black: #000000;
+$white: #ffffff;
+$red: #da0000;
+$yellow: #dada00;
+$green: #00da00;
+$blue: #0000da;
+$grey: #aaaaaa;
+
+$breakpoint-mobile: 1000px;
+
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex{
+    display: flex;
+}
+
+@mixin block {
+    display: block;
+}
+
+@mixin grid{
+    display: grid;
+    place-items: center;
+}
+
+@mixin logo {
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  	clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+}
+
+$font-large: 3.5rem;
+$font-medium: 2.3rem;
+$font-small: 1.5rem;
+
+@media (max-width: $breakpoint-mobile) {
+    $font-large: 2.5rem;
+    $font-medium: 1.8rem;
+    $font-small: 1.3rem;
+}

@@ -1,5 +1,5 @@
 import {Doughnut} from 'react-chartjs-2'
-import '../Css/DoughnutChart.css'
+import '../Styles/DoughnutChart.scss'
 
 const DoughnutChart = () => {
 	return(

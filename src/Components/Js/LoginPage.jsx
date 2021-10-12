@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import '../Css/Login.css';
+import '../Styles/Login.scss';
 
 const LoginPage = ({ Login, error }) => {
 
@@ -42,12 +42,12 @@ const LoginPage = ({ Login, error }) => {
 						<h2 className="heading strong">Powerful Cloud Retail POS System</h2>
 					</div>
 				</div>
-				<form className="login-form" onSubmit={submitHandler }>
+				<form className="Login-form" onSubmit={submitHandler }>
 					<h2 className="heading"><span className="block">Hey'</span> Login Now</h2>
 				{(error !== "") ? (<div className="error">{error}</div>) : ""}
-					<input type="number" className="login-inputs" id="userid"  placeholder="User Id" onChange={e => setDetails({...details, userid: e.target.value})} value={details.userid} />
-					<input type="password" className="login-inputs" id="password" placeholder="Password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
-					<select className="login-inputs">
+					<input type="number" className="Login-inputs" id="userid"  placeholder="User Id" onChange={e => setDetails({...details, userid: e.target.value})} value={details.userid} />
+					<input type="password" className="Login-inputs" id="password" placeholder="Password" onChange={e => setDetails({...details, password: e.target.value})} value={details.password} />
+					<select className="Login-inputs">
 						<option value="" disabled selected>Select Store</option>
 						<option value="">Km Guntur</option>
 						<option value="">Km Hyderabad</option>
@@ -61,7 +61,7 @@ const LoginPage = ({ Login, error }) => {
 					<a href="#" className="forget-password">Forget Password</a>
 				</form>
 			</div>
-			<div className="login-footer">
+			<div className="Login-footer">
 				<p className="copyright">c</p>
 				<p>2021 OTSI - POS Portal | All rights reserved.</p>
 			</div>

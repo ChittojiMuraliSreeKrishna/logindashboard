@@ -1,11 +1,11 @@
-import '../Css/Header.css';
+import '../Styles/Header.scss';
 const Header = ({user, Logout}) => {
 	return(
 		<div className="Header">
 			<div className="company-heading">
-			<div className="header-logo">
-				<div className="header-inner-logo">
-					<div className="header-text">R</div>
+			<div className="Header-logo">
+				<div className="Header-inner-logo">
+					<div className="Header-text">R</div>
 				</div>
 			</div>
 			<div className="company-name">
@@ -21,4 +21,4 @@ const Header = ({user, Logout}) => {
 		)
 }
 
-export default Header
+export default Header;

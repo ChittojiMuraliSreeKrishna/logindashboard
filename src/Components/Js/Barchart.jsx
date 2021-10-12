@@ -1,5 +1,5 @@
 import {Bar} from 'react-chartjs-2'
-import '../Css/Barchart.css'
+import '../Styles/Barchart.scss'
 
 const Barchart = () => {
 	return(

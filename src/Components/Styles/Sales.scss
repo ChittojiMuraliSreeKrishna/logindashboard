@@ -1,0 +1,56 @@
+@import "variables";
+
+.Sales {
+    @include flex-column;
+    justify-content: space-between;
+    height: 350px;
+
+    &-box{
+        @include grid;
+        width: 350px;
+	    height: 110px;
+	    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	    border-radius: 10px;
+	    padding: 1rem;
+
+        .miniheading{
+            color: $grey;
+            font-size: $font-small;
+            font-weight: 100;
+        }
+
+        .subheading{
+            color: $white;
+            font-size: $font-medium;
+            font-weight: 600;
+        }
+    }
+}
+
+.today-sales{
+    background: linear-gradient(to right, #3aa143, #0b6623);
+}
+
+.monthly-sales{
+	background: linear-gradient(to right, #0067b1, #03254c);
+}
+
+.total-sales{
+	background: linear-gradient(to right, #dd4303, #853500);
+}
+
+@media (min-width: $breakpoint-mobile ) {
+    .Sales{
+        height: 500px;
+        &-box{
+            height: 160px;
+            .subheading{
+                font-size: $font-large;
+            }
+            .miniheading{
+                font-size: $font-medium;
+            }
+        }
+    }
+
+}

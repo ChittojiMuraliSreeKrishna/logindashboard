@@ -1,7 +1,7 @@
 import Barchart from './Barchart'
 import DoughnutChart from './DoughnutChart'
 import Sales from './Sales';
-import '../Css/Component.css'
+import '../Styles/Component.scss'
 
 const Component = () => {
 	return(

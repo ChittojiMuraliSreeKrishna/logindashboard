@@ -1,0 +1,263 @@
+@import 'Variables';
+
+.Login{
+    min-height: 100vh;
+    background-color: $black;
+    color: $white;
+
+    &-body{
+        @include flex;
+        min-height: 90vh;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    &-footer{
+        @include flex;
+        font-size: $font-small;
+        margin-left: 3rem;
+    }
+
+    &-form{
+        height: 60vh;
+        width: 450px;
+        @include flex-column;
+        justify-content: space-around;
+        background: $white;
+        color: $black;
+        border-radius: 2rem;
+        padding: 2rem;
+    
+        .heading{
+            font-weight: 600;
+        }
+    }
+
+    &-inputs{
+        height: 4rem;
+	    border-radius: 5px;
+	    border: 2px solid $grey;
+	    padding: 5px;
+	    font-size: $font-medium;
+
+        &:focus{
+            outline: none !important;
+            border: 2px solid $grey;
+        }
+    }
+}
+
+.heading{
+    font-size: $font-large;
+    font-weight: 400;
+}
+
+.sub-heading{
+    font-size: $font-medium;
+    font-weight: 0;
+}
+
+.company-name{
+    .heading{
+        text-transform: uppercase;
+    }
+    .sub-heading{
+        color: $grey;
+    }
+}
+
+.company-logo{
+    background: $red;
+    width: 80px;
+	height: 80px;
+	@include grid;
+    @include logo;
+}
+
+.logo{
+    background: $white;
+    width: 90px;
+	height: 90px;
+	@include grid;
+    @include logo;
+}
+
+.brand{
+    background: $white;
+    color: $red;
+    width: 70px;
+    height: 70px;
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-align: center;
+	@include logo;
+}
+
+.company-heading {
+    @include flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.languages{
+    @include flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+    margin: 0 0 2rem 1rem;
+    font-size: $font-small;
+}
+
+.captions{
+    margin: 8rem 0;
+    width: 450px;
+
+    .light{
+        font-weight: 100;
+        color: $grey;
+        margin-bottom: 1rem;
+    }
+
+    .strong{
+        font-weight: 900;
+        margin-top: 2rem;
+    }
+}
+
+.copyright {
+    width: 20px;
+	height: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid $grey;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+	margin: 0 5px;
+}
+
+.block {
+    @include block;
+}
+
+.submit-button{
+    height: 4rem;
+	background: $red;
+	color: $white;
+	border-radius: 0.5rem;
+	border: 0;
+	text-transform: uppercase;
+	font-size: $font-medium;
+	cursor: pointer;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.rememberme-section{
+    label{
+        margin-left: 15px;
+        font-size: $font-small;
+    }
+}
+
+select {
+    color: $grey;
+    margin: 0;      
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+	background-image:
+    linear-gradient(45deg, transparent 50%, gray 50%),
+    linear-gradient(135deg, gray 50%, transparent 50%),
+    linear-gradient(to right, #ccc, #ccc);
+  	background-position:
+    calc(100% - 30px) calc(0.7em + 2px),
+    calc(100% - 25px) calc(0.7em + 2px),
+    calc(100% - 2em) 0.3em;
+  	background-size:
+    5px 5px,
+    5px 5px,
+    3px 1.2em;
+  	background-repeat: no-repeat;
+  	cursor: pointer;
+}
+
+option {
+    color: $grey;
+}
+
+.remember {
+    cursor: pointer;
+}
+
+.forget-password{
+    font-size: $font-small;
+    color: $black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+}
+
+.error{
+    color: $red;
+    font-size: $font-medium;
+    font-weight: 400;
+}
+
+@media (max-width: $breakpoint-mobile ) {
+    .logo{
+        height: 70px;
+		width: 70px;
+    }
+
+    .company-logo{
+		height: 60px;
+		width: 60px;
+	}
+
+	.brand{
+		height: 50px;
+		width: 50px;
+		font-size: 3.2rem;
+	}
+
+    .Login{
+        &-body{
+            min-height: 100vh;
+            flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+        }
+
+        &-footer{
+            padding: 2rem 0;
+        }
+    }
+
+    .languages {
+        width: 280px;
+    }
+
+    .company-heading {
+        justify-content: flex-start;
+        margin-top: 2rem;
+    }
+
+    .captions {
+        margin: 4rem 0;
+    }
+}
+
+input{
+    &[type="number"]{
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+}
+}

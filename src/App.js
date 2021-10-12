@@ -1,6 +1,6 @@
-import LoginPage from './Components/Login/Js/LoginPage'
+import LoginPage from './Components/Js/LoginPage'
 import React, { useState } from 'react';
-import Body from './Components/Dashboard/Js/Body'
+import Body from './Components/Js/Body'
 
 function App() {
   const adminUser = {

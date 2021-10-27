@@ -1,4 +1,3 @@
-import '../Styles/Sales.scss';
 
 const Sales = () => {
 	return(

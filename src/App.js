@@ -1,38 +1,18 @@
-import LoginPage from './Components/Js/LoginPage'
-import React, { useState } from 'react';
-import Body from './Components/Js/Body'
+import React from "react";
+import "./App.scss";
+import { BrowserRouter, Route } from "react-router-dom";
+import LoginPage from "./Components/Jsx/LoginPage";
+import Body from "./Components/Jsx/Body";
 
-function App() {
-  const adminUser = {
-    userid: "9972577728",
-    password: "easyretail"
-  }
- 
- const [user, setUser] = useState({userid: ""});
- const [error, setError] = useState("");
-
- const Login = details => {
-  console.log(details);
-
-  if(details.userid === adminUser.userid && details.password === adminUser.password){
-    console.log("Logged In");
-    setUser({
-      userid: details.userid,
-    })
-    }else{
-    console.log("details do not match");
-    setError("details do not match");
-  }
-}
-const Logout = () => {
-    setUser({userid: ""})
-  }
-
+const App = () => {
   return (
     <div className="App">
-      {(user.userid !== "") ? (<Body Logout={Logout} user={user} />) : (<LoginPage Login={Login} error={error} />)}
+      <BrowserRouter>
+        <Route exact path="/" component={LoginPage} />
+        <Route path="/body/" component={Body} />
+      </BrowserRouter>
     </div>
   );
-}
+};
 
 export default App;

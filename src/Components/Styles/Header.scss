@@ -1,12 +1,10 @@
-@import 'Variables';
-
 .Header{
     background: $grey;
     @include flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    min-height: 6rem;
+    min-height: 7rem;
     font-size: $font-medium;
 
     &-logo{
@@ -36,8 +34,13 @@
         @include grid;
     }
 
-    .subheading{
+        .subheading{
         color: $red;
+    }
+
+    .company-heading{
+      display: flex;
+      gap: 1rem;
     }
 }
 
@@ -47,14 +50,27 @@
 }
 
 .user-details{
-    @include flex-column;
-    align-items: flex-end;
+  width: 25rem;
+  @include flex;
+  justify-content: space-around;
 }
 
 .logout-btn{
     background: $red;
     color: $white;
     font-size: $font-small;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.function-btn{
+    background: $green;
+    color: $black;
+    font-size: $font-small;
+    text-decoration: none;
     border: none;
     border-radius: 5px;
     padding: 0.5rem;

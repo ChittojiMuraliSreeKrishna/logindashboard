@@ -1,5 +1,6 @@
-import '../Styles/Header.scss';
-const Header = ({user, Logout}) => {
+import {Link} from 'react-router-dom';
+
+const Header = () => {
 	return(
 		<div className="Header">
 			<div className="company-heading">
@@ -14,8 +15,9 @@ const Header = ({user, Logout}) => {
 			</div>
 			</div>
 			<div className="user-details">
-			<h3 className="miniheading">Welcome: {user.userid}</h3>
-			<button className="logout-btn" onClick={Logout}>Logout</button>
+        <Link className="function-btn" to={process.env.PUBLIC_URL + '/body/'} >Component</Link>
+        <Link to={process.env.PUBLIC_URL + '/body/posts'} className="function-btn">Posts</Link>
+          <a href={process.env.PUBLIC_URL + '/'} className="logout-btn">Logout</a>
 		</div>
 		</div>
 		)

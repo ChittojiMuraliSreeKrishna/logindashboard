@@ -1,13 +1,11 @@
-@import "variables";
-
 .Sales {
     @include flex-column;
     justify-content: space-between;
     height: 350px;
 
     &-box{
-        @include grid;
-        width: 350px;
+      @include grid;
+      width: 350px;
 	    height: 110px;
 	    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 	    border-radius: 10px;
